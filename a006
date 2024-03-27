@@ -1,0 +1,28 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+	int a,b,c;
+	cin>>a>>b>>c;
+	int ov=pow(b,2)-4*a*c,r1,r2;
+	if(ov==0)
+	{
+		cout<<"Two same roots x="<<-b/(2*a);
+		
+	}
+	else if(ov>0)
+	{
+		r1=(-b+sqrt(ov))/(2*a);
+		r2=(-b-sqrt(ov))/(2*a);
+		cout<<"Two different roots x1="<<r1<<" , x2="<<r2;
+	} 
+	else if(ov<0)
+	{
+		cout<<"No real root";
+	}
+	
+	return 0;
+	
+ }
